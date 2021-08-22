@@ -5,7 +5,7 @@ Third party will be installed automatically to application/third_party by [Compo
 This third party also use [CoreUI-Smarty-ACL](https://github.com/andri-sudarmawijaya/CoreUI-Smarty-ACL).
 to get identity.
 
-##Installation
+## Installation
 
 ```bash
 composer require andri-sudarmawijaya/ci-activities:1.0.x-dev
@@ -23,7 +23,7 @@ $autoload['packages'] = array(
 );
 ```
 
-#Use activities log
+### Use
 
 In your controller
 ```php
@@ -35,11 +35,23 @@ In your controller
     }
 ```
 
+#### use activities log
 in your part of code
 ```php
         $param['tabel'] = 'Your tabel';
         $param['content'] = 'Your content want to log';
         $param['info'] = 'Your short info';
+
+        $this->activities->log_activities($param);
+```
+
+#### use telegram bot
+in your part of code
+```php
+        '...';
+        $param['botToken'] = 'XXXXXXXXXX:YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY'; //your telegram bot
+        $param['chatId'] = '-ZZZZZZZZZ'; //Your chat id
+        $param['content'] = 'Your content want to log'; // your message to telegram
 
         $this->activities->log_activities($param);
 ```
