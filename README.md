@@ -42,7 +42,7 @@ in your part of code
         $param['content'] = 'Your content want to log';
         $param['info'] = 'Your short info';
 
-        $this->activities->log_activities($param);
+        $this->activities->log($param);
 ```
 
 #### use telegram bot
@@ -53,7 +53,7 @@ in your part of code
         $param['chatId'] = '-ZZZZZZZZZ'; //Your chat id
         $param['content'] = 'Your content want to log'; // your message to telegram
 
-        $this->activities->log_activities($param);
+        $this->activities->telegram($param);
 ```
 ### import tabel
 Import activities.sql to your database
