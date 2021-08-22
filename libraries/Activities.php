@@ -49,11 +49,6 @@ Class Activities{
             'chat_id'=>$chatId,
             'text'=> $var['content'] ?? 'This is my message !!!',
         ];
-        echo '<pre>';
-        print_r($var);
-        echo '<br />-<br />-<br />';
-        print_r($params);
-        echo '</pre>';
 
         $ch = curl_init($website . '/sendMessage');
         curl_setopt($ch, CURLOPT_HEADER, false);
