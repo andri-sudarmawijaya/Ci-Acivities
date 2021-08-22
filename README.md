@@ -1,16 +1,12 @@
-# Ci-Acivities
-Activities log for CodeIgniter
+# Acivities log for CodeInitor 3
 
-
-Third party will be installed automatically to application/third_party by [Composer Installers Extender
-](https://github.com/oomphinc/composer-installers-extender).
-
+Third party will be installed automatically to application/third_party by [Composer Installers Extender](https://github.com/oomphinc/composer-installers-extender).
 
 This third party also use [CoreUI-Smarty-ACL](https://github.com/andri-sudarmawijaya/CoreUI-Smarty-ACL).
 to get identity.
 
-
 ##Installation
+
 ```bash
 composer require andri-sudarmawijaya/ci-activities:1.0.x-dev
 ```
@@ -27,7 +23,8 @@ $autoload['packages'] = array(
 );
 ```
 
-#Use
+#Use activities log
+
 In your controller
 ```php
     function __construct()
@@ -37,6 +34,8 @@ In your controller
 
     }
 ```
+
+in your part of code
 ```php
         $param['tabel'] = 'Your tabel';
         $param['content'] = 'Your content want to log';
