@@ -4,16 +4,24 @@ if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 Class Activities{
 
-    function insert_history($tabel, $isi){
+    /**
+     * Register
+     *
+     * @param string $tabel
+     * @param string $info
+     */
+    public function log_activities($param){
 
-        $CI = & get_instance();  //get instance, access the CI superobject
+        $this->CI = & get_instance();  //get instance, access the CI superobject
 
-        $CI->load->model('History_model');
-        $CI->load->library('smarty_acl');
-        $_history['history_tabel'] =  $tabel;
-        $_history['history_detail'] =  $CI->smarty_acl->get_admin()['name'] . $isi;
-        $_history['history_user_id'] =  $CI->smarty_acl->get_admin()['id'];
-        $CI->History_model->insert($_history);
+        $this->CI->load->model('Activities_model');
+        $this->CI->load->library('smarty_acl');
+
+        $activities['activities_tabel'] =  $param['tabel'];
+        $activities['activities_info'] =  $param['info'];
+        $activities['activities_detail'] =  $this->CI->smarty_acl->get_admin()['name'] . $param['content'];
+        $activities['activities_user_id'] =  $this->CI->smarty_acl->get_admin()['id'];
+        $this->CI->Activities_model->insert($activities);
     }
 
 }
