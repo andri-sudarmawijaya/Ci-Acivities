@@ -9,6 +9,8 @@ Class Activities{
      *
      * @param string $tabel
      * @param string $info
+     * @param string $content
+     *
      */
     public function log_activities($param){
 
