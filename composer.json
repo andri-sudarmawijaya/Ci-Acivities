@@ -1,0 +1,24 @@
+{
+    "name": "andri-sudarmawijaya/ci-activities",
+    "description": "Activities Log for CodeIgniter 3",
+    "type": "codeigniter-third-party",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andri Sudarmawijaya",
+            "homepage": "https://github.com/andri-sudarmawijaya/ci-activities"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "oomphinc/composer-installers-extender": "^2.0"
+    },
+    "extra": {
+        "installer-paths": {
+            "application/third-party/": ["type:codeigniter-third-party"]
+        },
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
