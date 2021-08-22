@@ -55,3 +55,5 @@ in your part of code
 
         $this->activities->log_activities($param);
 ```
+### import tabel
+Import activities.sql to your database
