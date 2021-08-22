@@ -5,7 +5,7 @@ if (!defined('BASEPATH'))
 Class Activities{
 
     /**
-     * Register
+     * Activities
      *
      * @param string $tabel
      * @param string $info
