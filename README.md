@@ -1,4 +1,4 @@
-# Acivities log for CodeInitor 3
+# Acivities log for CodeIgnitor 3
 
 Third party will be installed automatically to application/third_party by [Composer Installers Extender](https://github.com/oomphinc/composer-installers-extender).
 
