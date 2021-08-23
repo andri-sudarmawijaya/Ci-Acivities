@@ -3,7 +3,7 @@
 Third party will be installed automatically to application/third_party by [Composer Installers Extender](https://github.com/oomphinc/composer-installers-extender).
 
 This third party also use [CoreUI-Smarty-ACL](https://github.com/andri-sudarmawijaya/CoreUI-Smarty-ACL).
-to get identity.
+for theme and [Smarty ACL](https://github.com/andri-sudarmawijaya/SmartyAcl) to get identity.
 
 ## Installation
 

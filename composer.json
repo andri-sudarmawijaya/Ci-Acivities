@@ -12,6 +12,7 @@
     "minimum-stability": "dev",
     "require": {
         "oomphinc/composer-installers-extender": "^2.0",
+        "andri-sudarmawijaya/coreui-smarty-acl": "1.0.x-dev",
         "andri-sudarmawijaya/smartyacl": "1.0.x-dev"
     },
     "extra": {
