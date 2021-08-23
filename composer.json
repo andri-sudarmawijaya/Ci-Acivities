@@ -11,7 +11,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "oomphinc/composer-installers-extender": "^2.0"
+        "oomphinc/composer-installers-extender": "^2.0",
+        "andri-sudarmawijaya/smartyacl": "1.0.x-dev"
     },
     "extra": {
         "installer-paths": {
